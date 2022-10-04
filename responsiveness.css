@@ -1,0 +1,367 @@
+@media screen and (min-width: 800px) {
+/*
+=============== 
+Variables
+===============
+*/
+
+:root {
+  --transition: all 0.3s linear;
+  --ff-primary: #fc4a1c;
+  --ff-secondary: #22292F;
+}
+
+
+    h1 {
+        font-size: 4rem;
+      }
+      h2 {
+        font-size: 2.5rem;
+      }
+      h3 {
+        font-size: 1.75rem;
+      }
+      h4 {
+        font-size: 1rem;
+      }
+      @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital@1&display=swap');
+      body {
+        font-size: 1rem;
+        /* background-color: #fcde67; */
+        background-color: #4abdac;
+        font-family: 'Josefin Sans', sans-serif;
+        color: #dfdce3;
+      }
+      h1,
+      h2,
+      h3,
+      h4 {
+        line-height: 1;
+      }
+       * {
+        margin: 0;
+       }
+       html {
+        scroll-behavior: smooth;
+       }
+    .nav-toggle {
+        display: none;
+    }
+    .nav-center {
+        width: 90vw;
+        max-width: 1170px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .links-container {
+        height: auto !important;
+      }
+      .links {
+        display: flex;
+      }
+      .links a {
+        background: transparent;
+        color: var(--clr-white);
+        font-size: 1.1rem;
+        text-transform: capitalize;
+        letter-spacing: var(--spacing);
+        display: block;
+        transition: var(--transition);
+        margin: 0 1rem;
+        font-weight: bold;
+        padding: 0;
+      }
+
+      button {
+        width: 25%;
+        padding: 8px;
+        margin: 5px;
+        background-color: #fc4a1c;
+        border: 2px solid #fc4a1c !important;
+        color: #dfdce3;
+        /* border: none; */
+        -webkit-box-shadow: 5px 5px 15px 0px #fc4a1c; 
+        box-shadow: 5px 5px 15px 0px #fc4a1c;
+        
+        border-radius: 5px;
+        font-size: 18px;
+        text-transform: capitalize;
+      }
+      button:hover {
+        animation-name: btnn;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+        color: white;
+      }
+      @keyframes btnn{
+        100% {
+          background-color:#dfdce3;
+          border: 2px solid #f7b733;
+          color: #000;
+        }
+      }
+      .banner {
+        padding: 5rem;
+      }
+      .container {
+        width: 90vw;
+        max-width: 1170px;
+        margin: 0 auto;
+        display: flex;
+        
+        /* align-items: center; */
+        /* justify-content: space-between;   */
+      }
+      .content-text {
+        width: 50%;
+        
+      }
+      .top-icon {
+        color: var(--ff-secondary) !important;
+      }
+      .top-icon:hover {
+        color: var(--ff-primary) !important;
+        cursor: pointer;
+        transition: var(--transition);
+      }
+      .fa-brands {
+        padding: 10px;
+        color: var(--ff-primary);
+        
+      }
+      
+      .hero-div {
+        display: flex;
+        justify-content: center;
+       
+      }
+      .img-man {
+        border-radius: 50%;
+        max-width: 50%;
+        height: 50%;
+        -webkit-box-shadow: 5px 5px 15px 0px #fc4a1c; 
+        box-shadow: 5px 5px 15px 0px #fc4a1c;
+        
+        
+      }
+      
+      section {
+        margin: 0;
+        height: 90vh;
+        padding: 5rem !important;
+      }
+     h2>span{
+      color: #fc4a1c;
+     }
+      #about {
+       background-color: #dfdce3;
+       color: #22292F;
+      }
+      
+      .about-content {
+        display: flex;
+        padding: 3rem;
+        
+      }
+      .about-text {
+        width: 50%;
+        
+      }
+      .about-text-img {
+        margin-right: 30px;
+      }
+      .about-img {
+        border-radius:16px;
+        max-width: 100%;
+        margin: auto;
+
+         /* From https://css.glass */
+         /* background: rgba(255, 255, 255, 0.28);
+         border-radius: 16px;
+         box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+         backdrop-filter: blur(4px);
+         -webkit-backdrop-filter: blur(4px);
+         border: 1px solid rgba(255, 255, 255, 0.3); */
+
+      }
+      #about h2 {
+        text-align: center; 
+      }
+      .about-text p {
+        word-spacing: 5px;
+        line-height: 30px;
+      }
+      #skills {
+        background-color: #22292f;
+        max-width: 100%;
+      }
+      #skills h2 {
+        text-align: center;
+      }
+      .html {
+        width: 90%; 
+        background-color: #4abdac;
+      }
+      .javascript {
+        width: 70%; 
+        background-color: #4abdac;
+      }
+      .skills {
+        text-align: right;
+        border-radius: 5px;
+        padding-top: 2px;
+        padding-bottom: 2px;
+        color: white;
+      }
+      .skills-container {
+        border-radius: 5px;
+        width: 100%;
+        background-color: #ddd;
+      }
+      .abilities {
+        width: 25%;
+        -webkit-box-shadow: 5px 5px 15px 0px #5bccf6; 
+        box-shadow: 5px 5px 15px 0px #5bccf6;
+        border-radius: 15px;
+        padding: 10px;  
+        text-align: center; 
+        margin: 20px;
+       
+      }
+      
+      .skills-div {
+        display: flex;
+        box-sizing: border-box;
+        text-align: center;
+        justify-content: space-around;
+        text-transform: uppercase;
+      }
+      #education{
+        margin: 0 auto;
+        /* background-color: #88bdbc; */
+        background-color: #4abdac;
+        
+      }
+      #education>div>h2 {
+        text-align: center; 
+      }
+      #education>div>p {
+        text-align: center;
+      }
+
+      .schools {
+        display: flex;
+        -webkit-box-shadow: 5px 5px 15px 0px #000000; 
+        box-shadow: 5px 5px 15px 0px #000000;
+        border-radius: 15px;
+        /* padding: 10px;   */
+        margin: 20px;
+        
+        
+      }
+      .schools img {
+        width: 20%;
+        height: auto;
+        margin: 0 ;
+      
+      }
+      .schools div {
+        padding: 20px;
+      }
+      .schools h3 {
+        color: #5A73A1;
+      }
+      .schools p {
+        text-transform: capitalize;
+      }
+      .schools span {
+        color: #337814;
+        text-transform: capitalize;
+        font-size: 20px;
+      }
+      .contact-content {
+        display: flex;
+        
+      }
+      .contact-div {
+        width: 50%;
+        
+      }
+      .form-contact-div {
+        display: flex;
+        justify-content: center;
+      }
+      .contact-div form  {
+        text-align: center;
+        width: 100%;
+        -webkit-box-shadow: 5px 5px 15px 0px #000000; 
+        box-shadow: 5px 5px 15px 0px #000000;
+        border-radius: 15px;
+        padding: 10px;  
+        text-align: center; 
+        margin-bottom: 20px;
+      }
+      .contact-div form input {
+        width: 90%;
+        height: 5vh;
+        margin: 10px;
+        border-radius: 5px;
+        padding-left: 10px;
+        border-style: none;
+      }
+      .contact-div form button {
+        width: 90%;
+        height: 6vh;
+        margin: 10px;
+        background-color: #fc4a1c !important;
+      }
+      .contact-div form textarea {
+        width: 90%;
+        margin: 10px;
+      }
+      .contact-div>div {
+        text-align: center;
+        
+      }
+      .contact-div>img {
+        visibility: visible;
+      }
+  
+      #work {
+        background-color: #f5e6cc;
+      }
+      #work h2 {
+        text-align: center;
+      }
+    
+      #contact {
+        background-color: #22292F;
+        /* background-color: #fef9f8; */
+      }
+      #contact h2 {
+        text-align: center;
+      }
+      footer {
+        background-color: #fc4a1c;
+        padding: 10px;
+        text-align: center;
+      }
+     
+          /* fixed nav */
+    .fixed-nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background: #fc4a1c;
+      box-shadow: #000000;
+    }
+.fixed-nav .links a {
+  color: var(--clr-grey-1);
+}
+.fixed-nav .links a:hover {
+  color: var(--clr-secondary);
+}
+}
